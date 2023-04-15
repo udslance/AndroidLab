@@ -14,3 +14,5 @@ dependencyResolutionManagement {
 }
 rootProject.name = "AndroidLab"
 include ':app'
+include ':recyclerview'
+include ':commonutil'
