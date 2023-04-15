@@ -1,3 +1,5 @@
 <resources>
     <string name="title_recyclerview">RecyclerView</string>
+    <string name="selected_device">selected device</string>
+    <string name="available_device">available devices</string>
 </resources>

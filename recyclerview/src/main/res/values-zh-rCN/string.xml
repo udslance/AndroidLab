@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="title_recyclerview">RecyclerView</string>
+    <string name="selected_device">已选设备</string>
+    <string name="available_device">可用设备</string>
+</resources>
