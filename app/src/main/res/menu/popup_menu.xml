@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_diagnosis"
+        android:title="@string/action_diagnosis" />
+    <item
+        android:id="@+id/action_remote"
+        android:title="@string/action_remote"
+        android:visible="false"/>
+    <item
+        android:id="@+id/action_menu"
+        android:title="@string/action_settings" />
+</menu>

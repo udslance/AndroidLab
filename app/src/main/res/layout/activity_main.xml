@@ -4,12 +4,48 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="16dp"
-    tools:context=".MainActivity">
+    android:padding="16dp">
+
     <Button
-        android:id="@+id/button_to_RecyclerViewLab"
+        android:id="@+id/btn_go_recyc"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAllCaps="false"
-        android:text="@string/go_recyclerviewlab"/>
+        android:text="@string/go_recyclerviewlab" />
+
+    <Button
+        android:id="@+id/btn_show_badge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="@string/show_badge" />
+
+    <Button
+        android:id="@+id/btn_hide_badge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="@string/hide_badge" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:text="@string/show_remote_service"/>
+        <Switch
+            android:id="@+id/switch_show_remote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:thumb="@drawable/switch_ios_thumb"
+            android:track="@drawable/switch_ios_track_selector"
+            tools:ignore="UseSwitchCompatOrMaterialXml" />
+    </LinearLayout>
+
 </LinearLayout>

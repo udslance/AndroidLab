@@ -2,4 +2,11 @@
 <resources>
     <string name="app_name">AndroidLab</string>
     <string name="go_recyclerviewlab">GO RecyclerViewLab</string>
+    <string name="action_menu">菜单</string>
+    <string name="action_remote">远程服务</string>
+    <string name="action_diagnosis">诊断分析</string>
+    <string name="action_settings">设置</string>
+    <string name="show_badge">显示小红点</string>
+    <string name="hide_badge">隐藏小红点</string>
+    <string name="show_remote_service">显示远程服务</string>
 </resources>
