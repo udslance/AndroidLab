@@ -27,6 +27,11 @@ public class DeviceSupplier {
 
     private static final Random RANDOM = new Random();
 
+    /**
+     * 获取一个随机的平板DeviceInfo对象
+     *
+     * @return 随机的平板DeviceInfo对象
+     */
     public static DeviceInfo getRandomTablet() {
         Log.i(TAG, "call getRandomTablet");
         String name = TABLET_NAMES[RANDOM.nextInt(TABLET_NAMES.length)] + getRandomNumericString(NAME_LENGTH);
@@ -35,6 +40,11 @@ public class DeviceSupplier {
         return new DeviceInfo(name, intType, id);
     }
 
+    /**
+     * 获取一个随机的手机DeviceInfo对象
+     *
+     * @return 随机的手机DeviceInfo对象
+     */
     public static DeviceInfo getRandomPhone() {
         Log.i(TAG, "call getRandomPhone");
         String name = PHONE_NAMES[RANDOM.nextInt(TABLET_NAMES.length)] + getRandomNumericString(NAME_LENGTH);
@@ -43,6 +53,11 @@ public class DeviceSupplier {
         return new DeviceInfo(name, intType, id);
     }
 
+    /**
+     * 获取一个随机的手表DeviceInfo对象
+     *
+     * @return 随机的手表DeviceInfo对象
+     */
     public static DeviceInfo getRandomWatch() {
         Log.i(TAG, "call getRandomWatch");
         String name = WATCH_NAMES[RANDOM.nextInt(WATCH_NAMES.length)] + getRandomNumericString(NAME_LENGTH);
