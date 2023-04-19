@@ -94,6 +94,43 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         MenuInflater inflater = mPopupMenu.getMenuInflater();
         // 加载弹出式菜单的布局文件
         inflater.inflate(R.menu.popup_menu, mPopupMenu.getMenu());
+
+        mPopupMenu.setOnMenuItemClickListener(item -> {
+            // 检查菜单项的 id 是否为 action_settings
+            switch (item.getItemId()) {
+                case R.id.action_diagnosis:
+                    return intentToDiagnosis();
+                case R.id.action_remote:
+                    return intentToRemote();
+                case R.id.action_setting:
+                    return intentToSettings();
+                default:
+                    Log.w(TAG, "Unknown menu item");
+                    break;
+            }
+            return false;
+        });
+    }
+
+    private boolean intentToDiagnosis() {
+        Intent intentToDiagnosis = new Intent();
+        intentToDiagnosis.setClass(MainActivity.this, DiagnosisActivity.class);
+        startActivity(intentToDiagnosis);
+        return true;
+    }
+
+    private boolean intentToRemote() {
+        Intent intentToRemote = new Intent();
+        intentToRemote.setClass(MainActivity.this, RemoteActivity.class);
+        startActivity(intentToRemote);
+        return true;
+    }
+
+    private boolean intentToSettings() {
+        Intent intentToSetting = new Intent();
+        intentToSetting.setClass(MainActivity.this, SettingActivity.class);
+        startActivity(intentToSetting);
+        return true;
     }
 
     @Override

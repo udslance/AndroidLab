@@ -8,6 +8,6 @@
         android:title="@string/action_remote"
         android:visible="false"/>
     <item
-        android:id="@+id/action_menu"
+        android:id="@+id/action_setting"
         android:title="@string/action_settings" />
 </menu>
