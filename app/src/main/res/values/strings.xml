@@ -2,9 +2,9 @@
     <string name="app_name">AndroidLab</string>
     <string name="go_recyclerviewlab">GO RecyclerViewLab</string>
     <string name="action_menu">menu</string>
-    <string name="action_remote">remote service</string>
-    <string name="action_diagnosis">diagnosis</string>
-    <string name="action_settings">settings</string>
+    <string name="action_remote">Remote service</string>
+    <string name="action_diagnosis">Diagnosis</string>
+    <string name="action_settings">Settings</string>
     <string name="show_badge">show badge</string>
     <string name="hide_badge">hide badge</string>
     <string name="show_remote_service">show remote service</string>

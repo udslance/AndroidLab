@@ -1,6 +1,7 @@
 package cn.hou.androidlab;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.MenuItem;
 
 import androidx.appcompat.app.ActionBar;
@@ -8,10 +9,15 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import cn.hou.commonutil.NullUtils;
 
+/**
+ * @author H
+ */
 public class DiagnosisActivity extends AppCompatActivity {
+    private static final String TAG = "DiagnosisActivity";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        Log.i(TAG, "call onCreate");
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_diagnosis);
         initActionBar();

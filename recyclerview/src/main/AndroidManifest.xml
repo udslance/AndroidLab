@@ -9,6 +9,7 @@
 
         <activity
             android:name=".RecyclerActivity"
+            android:label="@string/title_recyclerview"
             android:exported="false">
         </activity>
     </application>

@@ -36,13 +36,13 @@ public class RecyclerActivity extends AppCompatActivity implements View.OnClickL
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        Log.i(TAG, "call onCreate");
         super.onCreate(savedInstanceState);
         initView();
     }
 
     private void initView() {
         setContentView(R.layout.activity_recycler);
-        setTitle(R.string.title_recyclerview);
         initButtonArea();
         initActionBar();
         prepareAnimator();

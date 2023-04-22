@@ -160,7 +160,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private void showBadge() {
         // 在菜单项图标上显示一个小红点
-        Bitmap canvasBitmap = Bitmap.createBitmap(mIconDrawable.getIntrinsicWidth(), mIconDrawable.getIntrinsicHeight(), Bitmap.Config.ARGB_8888);
+        Bitmap canvasBitmap = Bitmap.createBitmap(mIconDrawable.getIntrinsicWidth(),
+            mIconDrawable.getIntrinsicHeight(), Bitmap.Config.ARGB_8888);
         Canvas canvas = new Canvas(canvasBitmap);
         mIconDrawable.setBounds(0, 0, canvas.getWidth(), canvas.getHeight());
         mIconDrawable.draw(canvas);
